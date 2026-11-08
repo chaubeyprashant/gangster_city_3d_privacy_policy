@@ -254,7 +254,7 @@
             <div class="meta-info">
                 <span><strong>Developer:</strong> Ergebins Technologies</span>
                 <span><strong>Application:</strong> Gangster City 3D</span>
-                <span><strong>Effective Date:</strong> September 17, 2026</span>
+                <span><strong>Effective Date:</strong> November 8, 2026</span>
             </div>
         </header>
 
@@ -262,13 +262,13 @@
             <h2>Table of Contents</h2>
             <ol>
                 <li><a href="#introduction">Introduction & Scope</a></li>
-                <li><a href="#no-personal-data">Information We Do Not Collect</a></li>
-                <li><a href="#data-collected">Information That May Be Collected</a></li>
-                <li><a href="#local-storage">Local Game Storage & Saves</a></li>
+                <li><a href="#account-data">Sign-In & Account Information</a></li>
+                <li><a href="#data-collected">Information Collected Automatically</a></li>
+                <li><a href="#local-storage">Game Progress & Local Storage</a></li>
                 <li><a href="#permissions">Android App Permissions</a></li>
-                <li><a href="#third-parties">Third-Party Libraries & Services</a></li>
+                <li><a href="#third-parties">Third-Party Services</a></li>
                 <li><a href="#children">Children's Privacy (COPPA)</a></li>
-                <li><a href="#user-rights">User Rights & Choices (GDPR / CCPA)</a></li>
+                <li><a href="#user-rights">Your Rights & Choices (GDPR / CCPA)</a></li>
                 <li><a href="#security">Data Security & Retention</a></li>
                 <li><a href="#changes">Changes to This Policy</a></li>
                 <li><a href="#contact">Contact Information</a></li>
@@ -278,28 +278,26 @@
         <main>
             <section id="introduction" class="card">
                 <h2>1. Introduction & Scope</h2>
-                <p>Ergebins Technologies ("we", "our", or "us") respects your privacy. This Privacy Policy explains our practices concerning data collection, use, and disclosure through your download, installation, and gameplay of <strong>Gangster City 3D</strong> on Android devices.</p>
+                <p>Ergebins Technologies ("we", "our", or "us") respects your privacy. This Privacy Policy explains what information is collected, how it is used and what choices you have when you download, install and play <strong>Gangster City 3D</strong> on Android devices.</p>
                 <div class="highlight-box success">
-                    <strong>Core Commitment:</strong> Gangster City 3D is designed to be enjoyed offline and locally. We do not sell, rent, or trade your personal data with third-party data brokers.
+                    <strong>The short version:</strong> you sign in (with Google, an email address, or as a guest) before you play. The game uses Google Firebase for sign-in, crash reports and usage statistics, and Google AdMob for optional rewarded ads and an occasional full-screen ad. We do not sell your personal information.
                 </div>
             </section>
 
-            <section id="no-personal-data" class="card">
-                <h2>2. Information We Do Not Collect</h2>
-                <p>We do not collect any personally identifiable information (PII) directly from users. Specifically, we do NOT ask for or collect:</p>
+            <section id="account-data" class="card">
+                <h2>2. Sign-In & Account Information</h2>
+                <p>The game asks you to sign in before you play, using Google Firebase Authentication. You choose one of three ways:</p>
                 <ul>
-                    <li>Your real name, postal address, or telephone number</li>
-                    <li>Email addresses or contact lists</li>
-                    <li>Precise GPS location or background location data</li>
-                    <li>Camera, microphone, photos, media, or SMS data</li>
-                    <li>Payment card details, bank account numbers, or financial account credentials</li>
-                    <li>Biometric data or facial scans</li>
+                    <li><strong>Google:</strong> we receive your Google account's user ID, display name, email address and profile photo link.</li>
+                    <li><strong>Email and password:</strong> we receive your email address. Your password is handled by Firebase Authentication; we never see it.</li>
+                    <li><strong>Guest:</strong> an anonymous account ID is created. No name or email address is collected.</li>
                 </ul>
+                <p>We use this to identify your account in the game and to keep one account per player. We do <strong>not</strong> collect your precise location, contacts, camera, microphone, photos, SMS messages, biometric data or payment card details.</p>
             </section>
 
             <section id="data-collected" class="card">
-                <h2>3. Information That May Be Collected Automatically</h2>
-                <p>When you run the game on an Android device, certain non-identifying technical information and diagnostics may be processed automatically to ensure technical stability, proper rendering, and error resolution:</p>
+                <h2>3. Information Collected Automatically</h2>
+                <p>While you play, the following information is processed automatically:</p>
                 <table>
                     <thead>
                         <tr>
@@ -311,65 +309,77 @@
                     <tbody>
                         <tr>
                             <td><strong>Device Specifications</strong></td>
-                            <td>Device model, CPU/GPU architecture (ARM64, Vulkan/OpenGL ES3 support), RAM capacity, screen resolution, and OS version.</td>
-                            <td>To select optimal graphics quality presets (texture resolution, shadow tier, frame rate target) and verify hardware compatibility.</td>
+                            <td>Device model, CPU/GPU, RAM, screen resolution and Android version.</td>
+                            <td>To choose graphics quality and frame-rate settings that suit your phone.</td>
                         </tr>
                         <tr>
-                            <td><strong>Diagnostic & Crash Data</strong></td>
-                            <td>Application crash logs, stack traces, and rendering pipeline exceptions generated during runtime.</td>
-                            <td>To identify software defects, fix bugs in upcoming updates, and enhance performance across various Android devices.</td>
+                            <td><strong>Crash &amp; Diagnostic Data</strong></td>
+                            <td>Crash logs and stack traces (Google Firebase Crashlytics).</td>
+                            <td>To find and fix bugs and improve stability.</td>
                         </tr>
                         <tr>
-                            <td><strong>Gameplay Telemetry</strong></td>
-                            <td>Aggregate performance metrics (frame rates, 1% low FPS, memory usage counters).</td>
-                            <td>To benchmark performance optimization and prevent frame drops during gameplay.</td>
+                            <td><strong>Gameplay Analytics</strong></td>
+                            <td>Events such as missions started, completed or failed, chapters, story choices, level-ups, wanted-level peaks, arrests, deaths, and one performance sample (frame rate, memory, graphics setting) per session (Google Firebase Analytics, linked to an app-instance ID, not your name).</td>
+                            <td>To understand how the game is played and where it needs improving.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Advertising Data</strong></td>
+                            <td>The Android advertising ID, IP address (approximate location), device and app information, and ad interactions (Google AdMob).</td>
+                            <td>To show ads, measure them and prevent fraud.</td>
                         </tr>
                     </tbody>
                 </table>
+                <p>Crash and usage reporting can be switched off at any time in the game under <em>Settings &gt; Share usage &amp; crash data</em>.</p>
             </section>
 
             <section id="local-storage" class="card">
-                <h2>4. Local Game Storage & Saves</h2>
-                <p>All game progression data—including mission states, unlocked vehicles, collected items, inventory, weapon loadouts, and audio/graphics settings—is stored locally on your device's internal storage sandbox using standard Unity serialization (e.g., <code>Application.persistentDataPath</code>).</p>
-                <p>This data stays on your personal device. If you uninstall the application or clear application data via Android device settings, your local save data will be permanently removed.</p>
+                <h2>4. Game Progress & Local Storage</h2>
+                <p>Your game progress (mission states, unlocked vehicles and weapons, collected items, inventory, cash, upgrades and audio/graphics settings) is saved on your device using standard Unity storage (<code>Application.persistentDataPath</code>). We do not currently upload your game progress to our servers.</p>
+                <p>If you uninstall the game or clear its data in Android settings, this local save is permanently removed.</p>
             </section>
 
             <section id="permissions" class="card">
                 <h2>5. Android App Permissions</h2>
-                <p>Gangster City 3D adheres strictly to the principle of least privilege. The application does not declare any dangerous runtime permissions. The manifest permissions utilized are:</p>
+                <p>The game declares no dangerous runtime permissions. It does not ask for your location, contacts, camera, microphone, photos or files. The permissions it uses are:</p>
                 <ul>
-                    <li><code>android.permission.INTERNET</code>: Enables network transmission for anonymous engine error reporting, standard package manager verification, or Google Play licensing services if applicable. The core game experience remains fully playable offline.</li>
+                    <li><code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>: sign-in, crash reports, analytics and ads.</li>
+                    <li><code>com.google.android.gms.permission.AD_ID</code> and <code>ACCESS_ADSERVICES_*</code>: lets Google AdMob read the advertising ID and Android's ad services to show and measure ads.</li>
+                    <li><code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code> and Google Play install-referrer / services access: used by Google's Firebase and advertising libraries to run reliably.</li>
                 </ul>
             </section>
 
             <section id="third-parties" class="card">
-                <h2>6. Third-Party Libraries & Services</h2>
-                <p>The game is built using the Unity 6 engine and distributed via the Google Play Store. These platform providers may process non-personal diagnostic data in accordance with their respective privacy policies:</p>
+                <h2>6. Third-Party Services</h2>
+                <p>The game is built with the Unity 6 engine and uses the following services, each under its own privacy policy:</p>
                 <ul>
-                    <li><strong>Google Play Services:</strong> Provided by Google LLC for app distribution, automated integrity checks, and Android platform compatibility. For more information, review the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</li>
-                    <li><strong>Unity Technologies:</strong> The game engine runtime may collect anonymous hardware information and crash telemetry. For more information, review the <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Unity Privacy Policy</a>.</li>
+                    <li><strong>Google Firebase</strong> (Authentication, Analytics, Crashlytics): sign-in, usage statistics and crash reports. See the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase privacy information</a>.</li>
+                    <li><strong>Google AdMob</strong>: optional rewarded ads and occasional full-screen ads. In the EU, UK and Switzerland a consent form from Google's User Messaging Platform asks about ad data use before any ad is requested. See <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">how Google uses data in AdMob</a>.</li>
+                    <li><strong>Google Play Services &amp; Google Sign-In:</strong> app distribution, integrity checks and Google account sign-in. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</li>
+                    <li><strong>Unity Technologies:</strong> the engine runtime may collect anonymous hardware information and crash telemetry. See the <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Unity Privacy Policy</a>.</li>
                 </ul>
+                <p>Watching a rewarded ad is always your choice: it is offered for a bonus (such as cash, health, ammo or a weapon unlock) and the game never requires it to play.</p>
             </section>
 
             <section id="children" class="card">
                 <h2>7. Children's Privacy (COPPA / GDPR-K Compliance)</h2>
-                <p>Gangster City 3D contains stylized 3D action gameplay and is intended for a general gaming audience (age 13+ or as specified by Google Play content ratings in your jurisdiction). We do not knowingly solicit or collect personal information from children under the age of 13 (or under 16 in the European Economic Area).</p>
-                <p>If you are a parent or legal guardian and believe that your child has provided personal information to us without your consent, please contact us immediately so that we can take corrective action.</p>
+                <p>Gangster City 3D contains stylized crime-action content and is not directed at children under 13 (or under 16 in the European Economic Area). We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has signed in or provided information, please contact us and we will delete the account and its data.</p>
             </section>
 
             <section id="user-rights" class="card">
-                <h2>8. User Rights & Choices (GDPR / CCPA)</h2>
-                <p>Under international privacy regulations (including GDPR in Europe and CCPA/CPRA in California), you have rights regarding your personal information:</p>
+                <h2>8. Your Rights & Choices (GDPR / CCPA)</h2>
                 <ul>
-                    <li><strong>Access & Portability:</strong> You may request information about any data we process concerning you. Because we do not collect personal accounts or server-side profiles, your game data is stored directly on your device.</li>
-                    <li><strong>Erasure (Right to Be Forgotten):</strong> You can delete all local data associated with Gangster City 3D at any time by clearing application data in Android <em>Settings &gt; Apps &gt; Gangster City 3D &gt; Storage &gt; Clear Storage</em>, or by uninstalling the application.</li>
-                    <li><strong>Opt-Out of Sale:</strong> We do not sell your personal information or device data to any third party.</li>
+                    <li><strong>Access &amp; portability:</strong> email us to ask what we hold about your account.</li>
+                    <li><strong>Deletion:</strong> email us and we will delete your account and its associated Firebase data within 30 days. You can also delete all local game data by clearing app storage in Android <em>Settings &gt; Apps &gt; Gangster City 3D &gt; Storage</em>, or by uninstalling the game.</li>
+                    <li><strong>Usage and crash data:</strong> switch it off in the game under <em>Settings &gt; Share usage &amp; crash data</em>.</li>
+                    <li><strong>Ads:</strong> rewarded ads are optional. Where the consent form appears, your choice is respected; you can contact us to withdraw it. You can also reset your advertising ID or opt out of personalised ads in Android <em>Settings &gt; Privacy &gt; Ads</em>.</li>
+                    <li><strong>Sign out:</strong> from the Account screen in the game's main menu.</li>
+                    <li><strong>Opt-out of sale:</strong> we do not sell your personal information.</li>
                 </ul>
             </section>
 
             <section id="security" class="card">
                 <h2>9. Data Security & Retention</h2>
-                <p>We take appropriate administrative and technical precautions to safeguard device data. Because we do not operate remote databases storing user identities or personal records, your exposure to remote data breaches from our systems is minimized.</p>
+                <p>Data is sent to Google's services over encrypted connections. Account information is kept until you ask us to delete it; analytics, crash and advertising data are kept by Google as described in their policies. We take appropriate precautions to protect it, but no method of transmission or storage is completely secure.</p>
             </section>
 
             <section id="changes" class="card">
